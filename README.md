@@ -2,20 +2,20 @@
 
 ##build all applications
 
-  cd sampleeureka
-  gradle clean build 
-  run `java -jar build/lib/*.jar`
+###
+    sampleeureka$ gradle clean build 
+###
+    sampleeureka$java -jar build/lib/*.jar
+
+###
+     profile$gradle clean build
+     profile$java -jar -DPUBLIC_PORT=8090 build/lib/*.jar
+     profile$java -jar -DPUBLIC_PORT=8091 build/lib/*.jar
+     profile$java -jar -DPUBLIC_PORT=8092 build/lib/*.jar
   
-  cd profile
-  gradle clean build
-  run `java -jar -DPUBLIC_PORT=8090 build/lib/*.jar`
-  run `java -jar -DPUBLIC_PORT=8091 build/lib/*.jar`
-  run `java -jar -DPUBLIC_PORT=8092 build/lib/*.jar`
-  
-  
-  cd aggregator
-  gradle clean build
-  run `java -jar build/lib/*.jar`
+###
+    aggregator$gradle clean build
+    aggregator$java -jar build/lib/*.jar
   
   
   repeadely access/query : `http://localhost:9090/welcome` and observ that request going to different servers in round robbin fashion.
