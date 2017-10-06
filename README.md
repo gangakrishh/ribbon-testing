@@ -20,10 +20,6 @@
   
   repeatedly access/query : `http://localhost:9090/welcome` and observe that request going to different servers in round robbin fashion.
   
-  now stop one the profile server (say 8092) and repeatedly access/query : `http://localhost:9090/welcome` and  observe few requests resulted in 500 error (connection errors in aggregator application)
+  now stop one of the profile server (say 8092) and repeatedly access/query : `http://localhost:9090/welcome` and  observe few requests resulted in 500 error (connection errors in aggregator application)
   
-  #how to avoid single request not to fail?
-  
-  
-  
-  
+# how to avoid single request not to fail?
